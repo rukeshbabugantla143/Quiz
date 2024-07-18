@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Web Dev Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="container">
+        <h1>Web Dev Quiz</h1>
+        <div id="login-form">
+            <h2>Login or Register</h2>
+            <form id="player-form">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+        <button id="start-game-btn" style="display: none;">Start Game</button>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div id="level-info">
+            <span>Level: <span id="current-level">1</span>/5</span>
+            <span>Time: <span id="timer">10:00</span></span>
+            <span>Question: <span id="question-number">1</span>/10</span>
+        </div>
+        <div id="question-container">
+            <h3 id="question"></h3>
+            <div id="answers"></div>
+        </div>
+        <button id="next-btn">Next Question</button>
+        <div id="results" style="display: none;">
+            <h2>Level Results</h2>
+            <p>Correct Answers: <span id="correct-answers"></span></p>
+            <p>Incorrect Answers: <span id="incorrect-answers"></span></p>
+            <p>Time Taken: <span id="time-taken"></span></p>
+            <h3>Incorrect Questions:</h3>
+            <ul id="incorrect-questions"></ul>
+            <button id="next-level-btn">Next Level</button>
+            <button id="certificate-btn" style="display: none;">Get Certificate</button>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Rukesh Babu Gantla</p>
+    </footer>
+    <audio id="clickSound" src="https://www.soundjay.com/button/button-1.mp3"></audio>
+    <script src="js.js"></script>
+</body>
+</html>
+
